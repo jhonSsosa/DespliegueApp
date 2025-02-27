@@ -3,26 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Calculadora</title>
+    <title>Mi Nombre</title>
 </head>
 <body>
-<input type="text" id="operacion" placeholder="Operación (ej. sqrt)">
-<input type="text" id="numeros" placeholder="Números (ej. 25)">
-<button onclick="calcular()">Calcular</button>
-<p>Resultado: <span id="resultado"></span></p>
-
-<script>
-    function calcular() {
-        let operacion = document.getElementById("operacion").value;
-        let numeros = document.getElementById("numeros").value;
-
-        fetch(`http://localhost:8080/calculadora`)
-            .then(response => response.text())
-            .then(data => {
-                document.getElementById("resultado").innerText = data;
-            })
-            .catch(error => console.error("Error:", error));
-    }
-</script>
+<h1>Sebastian</h1>
 </body>
 </html>
